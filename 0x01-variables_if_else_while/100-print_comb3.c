@@ -1,4 +1,4 @@
-i#include<stdio.h>
+#include<stdio.h>
 
 /**
  * main - print combos without repeats
@@ -39,4 +39,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
