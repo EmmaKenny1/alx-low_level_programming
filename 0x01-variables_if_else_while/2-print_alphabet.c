@@ -1,41 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - print combos without repeats
+ * main - Prints the alphabet in lowercase.
  *
- * Return: 0
+ * Return: Always 0.
  */
 int main(void)
 {
-	int f = '0';
-	int s = '0';
+	char letter;
 
-	while (f <= '9')
-	{
-		s = '0';
-		while (s <= '9')
-		{
-			if (s == f)
-			{
-			}
-			else if (f > s)
-			{
-			}
-			else
-			{
-				putchar(f);
-				putchar(s);
-				if (s == '9' && f == '8')
-				{
-					break;
-				}
-				putchar(',');
-				putchar(' ');
-			}
-			s++;
-		}
-		f++;
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
 	putchar('\n');
+
 	return (0);
 }
+
