@@ -1,18 +1,41 @@
-#include <stdio.h>
-#include <unistd.h>
+#include<stdio.h>
+
 /**
- * main - Entry point
- * Description: prints the alphabet in lower\n
- * Return: Always 0 (success)
+ * main - print combos without repeats
+ *
+ * Return: 0
  */
 int main(void)
 {
-	int ch;
+	int f = '0';
+	int s = '0';
 
-	for (ch = 'a'; ch <= 'z'; ch++
+	while (f <= '9')
 	{
-	putchar(ch);
+		s = '0';
+		while (s <= '9')
+		{
+			if (s == f)
+			{
+			}
+			else if (f > s)
+			{
+			}
+			else
+			{
+				putchar(f);
+				putchar(s);
+				if (s == '9' && f == '8')
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			s++;
+		}
+		f++;
 	}
 	putchar('\n');
 	return (0);
-	}
+}
